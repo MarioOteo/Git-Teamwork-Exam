@@ -1,0 +1,107 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(48, 48, 66);
+    color: white;
+}
+
+header h2
+{
+    margin: 0;
+}
+
+img
+{
+    height: 5%;
+    width: 5%;
+}
+
+section
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0.5rem;
+}
+
+.article
+{
+    margin: 0.5rem;
+    background-color: skyblue;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 2rem;
+}
+
+.artHeader
+{
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+
+    background-color: rgb(48, 48, 66);
+    color: white;
+}
+
+.artHeader button
+{
+    margin: 1rem;
+    margin-left: auto;
+}
+
+.artHeader h3
+{
+    margin-left: auto;
+}
+
+.article p
+{
+    padding: 0.5rem;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.mouseOverArt
+{
+    box-shadow: 0px 0px 5px 5px black;
+}
+
+@media (min-width: 580px)
+{
+    section
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 720px)
+{
+    section
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (min-width: 1000px)
+{
+    section
+    {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
